@@ -17,6 +17,9 @@
 }
 
 .add-button:hover{
-    transform: scale(1.1); /*el boton crecera 1.1 veces su tamaño*/
+    transform: scale(1.1); /*el boton crecera 1.1 veces su tamaño*/ 
+}
 
+.titulomodal{
+    text-align: center;
 }
