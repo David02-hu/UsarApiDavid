@@ -1,0 +1,22 @@
+.add-button {
+    position: fixed; /*el boton queda encima del contenido*/
+    bottom: 30px;/*separacion del botn con el borde inferior*/
+    right: 35px; /*separacion desde la derecha*/
+    background-color: rgb(255, 0, 0); /*color de fondo del boton*/
+    border: none;/*para que el boton no tenga bordes*/
+    border-radius: 50%;/*para hacer que el boton quede redondo*/
+    width: 70px;
+    height: 70px;/*para que el botn quede simetrico*/
+    display: flex;
+    justify-content: center;/*alineacion horizontal*/
+    align-items: center;/*alineacion vertical*/
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    z-index: 1001;/*para que el boton quede encima de todo*/
+    transition: trasform 0.0s;
+
+}
+
+.add-button:hover{
+    transform: scale(1.1); /*el boton crecera 1.1 veces su tamaño*/
+
+}
