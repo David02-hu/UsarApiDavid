@@ -2,7 +2,7 @@
     position: fixed; /*el boton queda encima del contenido*/
     bottom: 30px;/*separacion del botn con el borde inferior*/
     right: 35px; /*separacion desde la derecha*/
-    background-color: rgb(255, 0, 0); /*color de fondo del boton*/
+    background-color: rgb(97, 97, 97); /*color de fondo del boton*/
     border: none;/*para que el boton no tenga bordes*/
     border-radius: 50%;/*para hacer que el boton quede redondo*/
     width: 70px;
@@ -22,4 +22,8 @@
 
 .titulomodal{
     text-align: center;
+}
+
+.tabla-scroll{
+    overflow: auto;
 }

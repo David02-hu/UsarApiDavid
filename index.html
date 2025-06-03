@@ -24,25 +24,27 @@
             </ul>
         </nav>
     </header>
-
+    
     <main class="container">
         <h2>Integrantes del equipo</h2>
 
-        <table  id="tabla" class="overflow-auto">
-            <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Edad</th>
-                    <th>Correo</th>
-                    <th>Acciones</th> <!--para botones adicionales-->
-                </tr>
-            </thead>
-            <tbody>
-                <!--Aqui can los registros de la base que vienen a travez de la API  -->
-            </tbody>
-        </table>
+        <div class="tabla-scroll">
+            <table  id="tabla" class="overflow-auto">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Edad</th>
+                        <th>Correo</th>
+                        <th>Acciones</th> <!--para botones adicionales-->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Aqui can los registros de la base que vienen a travez de la API  -->
+                </tbody>
+            </table>
+        </div>
     </main>
 <!--modal para agragar registros-->
 <dialog id="modalAgregar">
