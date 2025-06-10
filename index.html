@@ -24,12 +24,12 @@
             </ul>
         </nav>
     </header>
-    
+
     <main class="container">
         <h2>Integrantes del equipo</h2>
 
         <div class="tabla-scroll">
-            <table  id="tabla" class="overflow-auto">
+            <table id="tabla" class="overflow-auto">
                 <thead>
                     <tr>
                         <th>Id</th>
@@ -46,26 +46,53 @@
             </table>
         </div>
     </main>
-<!--modal para agragar registros-->
-<dialog id="modalAgregar">
-    <article>
-        <header>
-            <a href="#" class="close" id="btnCerrarModal"><a>
-                <h3 class="titulomodal">Agregar Integrantes</h3>
-        </header>
-        <form id="frmAgregarIntegrantes">
-            <input type="text" id="nombre" placeholder="Nombre" required>
-            <input type="text" id="apellido" placeholder="Apellido" required>
-            <input type="number" placeholder="Edad" id="edad" required>
-            <input type="email" id="email" placeholder="Correo electrónico" required>
-            <button type="submit" class="contrast">Guardar</button>
-        </form>
-    </article>
-</dialog>
+    <!--modal para agragar registros-->
+    <dialog id="modalAgregar">
+        <article>
+            <header>
+                <a href="#" class="close" id="btnCerrarModal"></a>
+                        <h3 class="titulomodal">Agregar Integrantes</h3>
+            </header>
+            <form id="frmAgregarIntegrantes">
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="text" id="apellido" placeholder="Apellido" required>
+                <input type="number" placeholder="Edad" id="edad" required>
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+                <button type="submit" class="contrast">Guardar</button>
+            </form>
+        </article>
+    </dialog>
+
+    <!--modal para editar registros-->
+
+    <dialog id="modalEditar">
+        <article>
+            <header>
+                <a href="#" class="close" id="btnCerrarEditar"></a>
+                        <h3>Editar Integrantes</h3>
+            </header>
+            <form id="frmEditarIntegrantes">
+                <input type="hidden" id="idEditar">
+                <input type="text" id="nombreEditar" placeholder="Nombre" required>
+                <input type="text" id="apellidoEditar" placeholder="Apellido" required>
+                <input type="number" placeholder="Edad" id="edadEditar" required>
+                <input type="email" id="emailEditar" placeholder="Correo electrónico" required>
+                <button type="submit" class="contrast">Guardar</button>
+            </form>
+        </article>
+    </dialog>
+
     <!--boton flotante par agregar regitros-->
-<button class="add-button" id="btnAbrirModal" title="Agregar Integrantes">
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-plus-icon lucide-user-round-plus"><path d="M2 21a8 8 0 0 1 13.292-6"/><circle cx="10" cy="8" r="5"/><path d="M19 16v6"/><path d="M22 19h-6"/></svg>
-</button>
+    <button class="add-button" id="btnAbrirModal" title="Agregar Integrantes">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-user-round-plus-icon lucide-user-round-plus">
+            <path d="M2 21a8 8 0 0 1 13.292-6" />
+            <circle cx="10" cy="8" r="5" />
+            <path d="M19 16v6" />
+            <path d="M22 19h-6" />
+        </svg>
+    </button>
 
     <script src="js/script.js"></script>
 </body>
